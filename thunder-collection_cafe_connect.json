@@ -1,0 +1,289 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "cafe_connect",
+    "dateExported": "2023-11-30T04:46:46.065Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5c1fe3c1-f0cd-4624-a264-eadc3e8fed92",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "REGISTRAR",
+            "url": "localhost:5000/api/autenticacao/registrar",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-29T22:51:14.671Z",
+            "modified": "2023-11-30T02:17:50.034Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cpf\": \"22222222222\",\n  \"nome\": \"admin\",\n  \"email\": \"admin@gmail.com\",\n  \"senha\": \"123456\",\n  \"telefone\": \"111111111\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d2bac68f-541b-4f77-891d-18a1df6d0270",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "LOGIN",
+            "url": "localhost:5000/api/autenticacao/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-29T23:07:16.188Z",
+            "modified": "2023-11-30T02:18:45.955Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdkOTJmMzUxYmExZTViYmFkZjMzMCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MDEzMDkwNjQsImV4cCI6MTcwMTU2ODI2NH0.UdwWNlelU410vTx6R_c8pPtTggcFPSkM-498hgd26ek"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"senha\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "59e09376-1321-4f59-b72f-983931a4c954",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "ATUALIZAR",
+            "url": "localhost:5000/api/usuarios/6567ee0134c724d37ee87ac4",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-11-30T01:52:06.135Z",
+            "modified": "2023-11-30T02:39:30.199Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdlZTAxMzRjNzI0ZDM3ZWU4N2FjNCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MDEzMDk5NjUsImV4cCI6MTcwMTU2OTE2NX0.BabsqBJ9r211iPzQmIuWw2b81DsS4K2KRcoGv2WVoqs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Gunico\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e36e01be-13ec-443c-b4db-bdd67d87f724",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "GET",
+            "url": "localhost:5000/api/usuarios/find/6567ee0134c724d37ee87ac4",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-11-30T02:19:23.632Z",
+            "modified": "2023-11-30T02:20:04.542Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdmMGNlMjBjMTJiMTJhMjY3NzM3YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMTMxMDcyNSwiZXhwIjoxNzAxNTY5OTI1fQ.cTlS_wY7GIzy44xkarXAv9UORzARFd8AAmMZdRcTqn4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6dd861af-7898-49e9-835a-8b671e07dc35",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "GET ALL USUARIOS",
+            "url": "localhost:5000/api/usuarios/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-11-30T02:22:03.619Z",
+            "modified": "2023-11-30T02:23:39.702Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdmMGNlMjBjMTJiMTJhMjY3NzM3YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMTMxMDcyNSwiZXhwIjoxNzAxNTY5OTI1fQ.cTlS_wY7GIzy44xkarXAv9UORzARFd8AAmMZdRcTqn4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3292c25b-c3a5-430d-969e-146d9a8f5ab9",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "GET STATUS USUARIO",
+            "url": "localhost:5000/api/usuarios/stats",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-11-30T02:32:45.252Z",
+            "modified": "2023-11-30T02:33:39.751Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdmMGNlMjBjMTJiMTJhMjY3NzM3YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMTMxMDcyNSwiZXhwIjoxNzAxNTY5OTI1fQ.cTlS_wY7GIzy44xkarXAv9UORzARFd8AAmMZdRcTqn4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cba5d045-1074-45a6-a89d-8ab97df5e7f4",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "REGISTRAR PRODUTO",
+            "url": "localhost:5000/api/produtos",
+            "method": "POST",
+            "sortNum": 85000,
+            "created": "2023-11-30T02:57:31.397Z",
+            "modified": "2023-11-30T03:07:52.891Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdmMGNlMjBjMTJiMTJhMjY3NzM3YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMTMxMDcyNSwiZXhwIjoxNzAxNTY5OTI1fQ.cTlS_wY7GIzy44xkarXAv9UORzARFd8AAmMZdRcTqn4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"café pelé\",\n  \"descricao\": \"teste\",\n  \"img\": \"teste\",\n  \"categoria\": [\"cafe\", \"capsula\"],\n  \"preco\":19\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e3d6144f-c3da-4212-a6ed-70fb53a7adc2",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "GET TODOS PRODUTOS",
+            "url": "localhost:5000/api/produtos",
+            "method": "GET",
+            "sortNum": 95000,
+            "created": "2023-11-30T03:08:02.319Z",
+            "modified": "2023-11-30T03:08:37.752Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdmMGNlMjBjMTJiMTJhMjY3NzM3YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMTMxMDcyNSwiZXhwIjoxNzAxNTY5OTI1fQ.cTlS_wY7GIzy44xkarXAv9UORzARFd8AAmMZdRcTqn4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"café pelé\",\n  \"descricao\": \"teste\",\n  \"img\": \"teste\",\n  \"categoria\": [\"cafe\", \"capsula\"],\n  \"preco\":19\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "16dbe8b3-adf9-47ea-a912-95c6cabc64b0",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "ADICIONAR PEDIDO",
+            "url": "localhost:5000/api/pedidos",
+            "method": "POST",
+            "sortNum": 105000,
+            "created": "2023-11-30T03:42:23.285Z",
+            "modified": "2023-11-30T04:08:14.731Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdmMGNlMjBjMTJiMTJhMjY3NzM3YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMTMxMDcyNSwiZXhwIjoxNzAxNTY5OTI1fQ.cTlS_wY7GIzy44xkarXAv9UORzARFd8AAmMZdRcTqn4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"6567ee0134c724d37ee87ac4\",\n  \"produtos\": [\n      {\n        \"idProduto\":\"asdadsdadas\",\n        \"quantidade\": 2\n      },  \n      {\n        \"idProduto\":\"asdadsdadsadsacsaas\",\n        \"quantidade\": 1\n      }\n  ],\n  \"quantia\": 100,\n  \"endereco\": \"São Paulo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "317ac7ee-7b85-47f4-ae74-17c7304119be",
+            "colId": "ef177a57-8dd0-417d-aa26-861b92401fbf",
+            "containerId": "",
+            "name": "RENDA",
+            "url": "localhost:5000/api/pedidos/renda",
+            "method": "GET",
+            "sortNum": 115000,
+            "created": "2023-11-30T04:09:11.371Z",
+            "modified": "2023-11-30T04:09:47.748Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "token",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjdmMGNlMjBjMTJiMTJhMjY3NzM3YiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMTMxMDcyNSwiZXhwIjoxNzAxNTY5OTI1fQ.cTlS_wY7GIzy44xkarXAv9UORzARFd8AAmMZdRcTqn4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"6567ee0134c724d37ee87ac4\",\n  \"produtos\": [\n      {\n        \"idProduto\":\"asdadsdadas\",\n        \"quantidade\": 2\n      },  \n      {\n        \"idProduto\":\"asdadsdadsadsacsaas\",\n        \"quantidade\": 1\n      }\n  ],\n  \"quantia\": 100,\n  \"endereco\": \"São Paulo\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
